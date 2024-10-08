@@ -1,0 +1,129 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box  ;
+}
+.box{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(https://images.pexels.com/photos/399187/pexels-photo-399187.jpeg);
+    height: 100vh;
+}
+.characters{
+    display: flex;
+}
+.player1{
+    margin-top: 300px;
+    margin-left: 250px;
+}
+.refree{
+    margin-left: 550px;
+    margin-top: 315px;
+}
+
+.ball{
+    margin-top: 480px;
+    margin-left: 200px;
+    animation: kick1 3s, kick2 3s, kick3 3s, linear forwards;
+    animation-delay: 5s, 10s, 16s;
+    animation-fill-mode: forwards;
+}
+@keyframes kick1 {
+    0%{
+        transform: translateY(0px);
+    }
+    100%{
+        transform: translateY(30px);
+    }
+    /* 100%{
+        transform: translateX(100px);
+    } */
+}
+@keyframes kick2 {
+    0%{
+        transform: translateY(60px);
+    }
+    100%{
+        transform: translateX(480px);
+    }
+}
+@keyframes kick3 {
+    0%{
+        transform: translateX(480px);
+    }
+    100%{
+        transform: translateY(-130px);
+    }
+}
+.keeper{
+    margin-top: 300px;
+    transform: translateX(-620px);
+    position: sticky;
+    top: 0;
+}
+.player2{ 
+    transform: scaleX(-1);
+    margin-left: -400px;
+    margin-top: 300px;
+}
+.player3{
+    margin-top: 400px;
+    margin-left: -1000px;
+    animation: player3 linear forwards 3s ;
+    animation-delay: 7s;
+}
+
+@keyframes player3 {
+    0%{
+        transform: translateX(0px);
+    }
+    100%{
+        transform: translateX(360px);
+    }
+}
+.player4{
+    margin-top: 320px;
+}
+.player5{
+    margin-top: 350px;
+    margin-left: 250px;
+    transform: scaleX(-1);
+}
+.player6{
+    margin-top: 350px;
+    animation: player6 linear forwards 5s;
+    margin-left: -70px;
+}
+.player7{
+    margin-top: 300px;
+    /* transform: scaleX(-1); */
+    margin-left: -600px;
+    animation: player7 linear forwards 3s ;
+}
+@keyframes player6 {
+    0%{
+        transform: translateX(0px);
+    }
+    50%{
+        transform: translateY(30px);
+    }
+    100%{
+        transform: translate(-320px, 30px);
+    }
+}
+.player8{
+    margin-top: 370px;
+    margin-left: 400px;
+    transform: scaleX(-1);
+    animation: player8 linear forwards 3s;
+    animation-delay: 13s;
+}
+@keyframes player8 {
+    0%{
+        transform: translateY(0px);
+    }
+    100%{
+        transform: translateY(-20px);
+    }
+}
