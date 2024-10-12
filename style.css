@@ -15,17 +15,17 @@
     display: flex;
 }
 .player1{
-    margin-top: 300px;
+    margin-top: 350px;
     margin-left: 250px;
 }
 .refree{
-    margin-left: 550px;
-    margin-top: 315px;
+    margin-left: 800px;
+    margin-top: 380px;
 }
 
 .ball{
-    margin-top: 480px;
-    margin-left: 200px;
+    margin-top: 500px;
+    margin-left: 250px;
     animation: kick1 3s, kick2 3s, kick3 3s, linear forwards;
     animation-delay: 5s, 10s, 16s;
     animation-fill-mode: forwards;
@@ -35,11 +35,8 @@
         transform: translateY(0px);
     }
     100%{
-        transform: translateY(30px);
+        transform: translateY(60px);
     }
-    /* 100%{
-        transform: translateX(100px);
-    } */
 }
 @keyframes kick2 {
     0%{
@@ -54,11 +51,12 @@
         transform: translateX(480px);
     }
     100%{
-        transform: translateY(-130px);
+        transform: translateY(-100px);
     }
 }
 .keeper{
-    margin-top: 300px;
+    margin-top: 350px;
+    margin-left: -100px;
     transform: translateX(-620px);
     position: sticky;
     top: 0;
@@ -66,10 +64,10 @@
 .player2{ 
     transform: scaleX(-1);
     margin-left: -400px;
-    margin-top: 300px;
+    margin-top: 350px;
 }
 .player3{
-    margin-top: 400px;
+    margin-top: 450px;
     margin-left: -1000px;
     animation: player3 linear forwards 3s ;
     animation-delay: 7s;
@@ -80,26 +78,26 @@
         transform: translateX(0px);
     }
     100%{
-        transform: translateX(360px);
+        transform: translateX(230px);
     }
 }
 .player4{
-    margin-top: 320px;
+    margin-top: 380px;
+    margin-left: -100px;
 }
 .player5{
-    margin-top: 350px;
+    margin-top: 450px;
     margin-left: 250px;
     transform: scaleX(-1);
 }
 .player6{
-    margin-top: 350px;
+    margin-top: 380px;
     animation: player6 linear forwards 5s;
-    margin-left: -70px;
+    margin-left: -100px;
 }
 .player7{
-    margin-top: 300px;
-    /* transform: scaleX(-1); */
-    margin-left: -600px;
+    margin-top: 350px;
+    margin-left: -650px;
     animation: player7 linear forwards 3s ;
 }
 @keyframes player6 {
@@ -110,12 +108,12 @@
         transform: translateY(30px);
     }
     100%{
-        transform: translate(-320px, 30px);
+        transform: translate(-340px, 30px);
     }
 }
 .player8{
-    margin-top: 370px;
-    margin-left: 400px;
+    margin-top: 450px;
+    margin-left: 420px;
     transform: scaleX(-1);
     animation: player8 linear forwards 3s;
     animation-delay: 13s;
@@ -125,6 +123,6 @@
         transform: translateY(0px);
     }
     100%{
-        transform: translateY(-20px);
+        transform: translateY(-90px);
     }
 }
